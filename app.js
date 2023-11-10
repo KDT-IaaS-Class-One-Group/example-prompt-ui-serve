@@ -10,7 +10,46 @@
  * * method = "POST"
  */
 
+/**
+ * import modules
+ */
 
+import express from "express";
+// console.log(express);
+
+
+
+
+
+
+/**
+ * app: application
+ */
+
+const app = express();
+// console.table(app);
+
+app.get('/', (req, res) => {
+  res.send('initialize, GET');
+});
+
+// app.post('/', (req, res) => {
+//   res.send('initialize, POST');
+// });
+
+/**
+ * ? Process ID 조회
+ * * MacOS : lsof -i :portNumber
+ * ? Process ID 강제 종료
+ * * MacOS : kill -9 :processID
+ */
+
+app.listen(5033, () => {
+  console.log('Running port : ', `http://localhost:5033`);
+})
+
+
+  
 /**
  * todo : 찾아볼 기술
  * pseudo 4. express.js
@@ -18,6 +57,7 @@
  * * express static 기능
  * * express router 기능
  * * express middleware 기능
+ * * - body-parser 기능 유용한 것 찾아보기
  * * 찾아보면서 추가하기
  * 
  */
