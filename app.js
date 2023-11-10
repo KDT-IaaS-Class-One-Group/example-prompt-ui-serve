@@ -2,6 +2,7 @@
  * ? ctrl + f navigate 
  * * #work- 기획하고 있는 작업
  * * #soon- 곧 해야할 작업
+ * * #learn- 하다가 배운 사항
  * 
  * 
  * 
@@ -43,7 +44,19 @@ const app = express();
  * 
  */
 
+
 app.use(express.static('public'));
+/**
+ * ? #learn-express-static
+ * * express.app().use(), use()를 사용하면
+ * * 위의 코드기준 /public/ 경로에 있는 파일들을 가지고
+ * * 문서에서 요청하는 GET 요청을 모두 '알아서' 해결한다.
+ * * static 페이지만 사용할 것이라면, 이정도면 충분한 기능
+ * * css 파일요청, js 파일요청 기타등등 트랜잭션을 알아서 처리해준다.
+ */
+
+
+
 
 // todo: #soon-work
 // app.get('/', (req, res) => {
