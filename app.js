@@ -1,4 +1,10 @@
 /**
+ * ? ctrl + f navigate 
+ * * #work- 기획하고 있는 작업
+ * * #soon- 곧 해야할 작업
+ * 
+ * 
+ * 
  * #work-memo
  * todo : web server 제작
  * pseudo 1. express.js를 활용한다.
@@ -37,12 +43,15 @@ const app = express();
  * 
  */
 
+app.use(express.static('public'));
 
-app.get('/', (req, res) => {
-  res.send('initialize, GET');
-});
+// todo: #soon-work
+// app.get('/', (req, res) => {
+//   // res.send('initialize, GET');
+// });
 
-// app.post('/', (req, res) => {
+// todo: soon-work
+// app.post('/', (req, res) => {XX
 //   res.send('initialize, POST');
 // });
 
