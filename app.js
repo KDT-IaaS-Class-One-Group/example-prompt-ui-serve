@@ -1,4 +1,5 @@
 /**
+ * #work-memo
  * todo : web server 제작
  * pseudo 1. express.js를 활용한다.
  * pseudo 2. GET 요청에 대응한다.
@@ -15,7 +16,6 @@
  */
 
 import express from "express";
-// console.log(express);
 
 
 
@@ -23,11 +23,20 @@ import express from "express";
 
 
 /**
+ * #work-app
  * app: application
  */
 
 const app = express();
-// console.table(app);
+
+
+/**
+ * 
+ * #work-get
+ * 
+ * 
+ */
+
 
 app.get('/', (req, res) => {
   res.send('initialize, GET');
